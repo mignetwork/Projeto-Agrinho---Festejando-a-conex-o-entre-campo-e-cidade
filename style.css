@@ -1,0 +1,437 @@
+@import url('https://fonts.googleapis.com/css2?family=Caprasimo&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html, body {
+  width: 100%;
+  height: 100%;
+  overflow-x: hidden;
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background: #f0f0f0;
+  min-height: 100vh;
+  zoom: 75%;
+}
+
+nav {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background: linear-gradient(to right,#64B53E 50%, #000 100%);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 40px;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.6);
+  z-index: 1000;
+}
+
+.logoagrinho img {
+  width: 120px;
+  height: 60px;
+  object-fit: contain;
+  border-radius: 20px;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 30px;
+}
+
+nav ul li {
+  position: relative;
+}
+
+nav ul li a {
+  display: block;
+  padding: 10px 15px;
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  transition: background-color 0.3s;
+}
+
+nav ul li a:hover {
+  background: linear-gradient(to right,#64B53E 30%, #046901 100%);
+  color: white;
+  border-radius: 4px;
+}
+
+nav ul li ul.sub-menu {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background: #2d5a1f;
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  min-width: 180px;
+  z-index: 1000;
+  border-radius: 2px;
+  box-shadow: 0 10px 10px rgba(0,0,0,1);
+}
+
+nav ul li:hover > ul.sub-menu {
+  display: block;
+}
+
+nav ul li ul.sub-menu li a {
+  padding: 10px 15px;
+  white-space: nowrap;
+  color: rgb(255, 255, 255);
+}
+
+nav ul li ul.sub-menu li a:hover {
+  background-color: #ffffff;
+  color: #005f00;
+}
+
+a:visited {
+  color: white;
+}     
+
+.sessao {
+  height: 600px;
+  background: #90EE90;
+  padding: 60px 20px;
+  border-top: 3px solid black;
+  scroll-margin-top: 80px;
+}
+
+.sessao1 {
+  height: 475px;
+  background: #90EE90;
+  padding: 60px 20px;
+  border-top: 3px solid black;
+  scroll-margin-top: 80px;
+}
+
+.sessao3 {
+  height: 800px;
+  background: #90EE90;
+  padding: 60px 20px;
+  border-top: 3px solid black;
+  scroll-margin-top: 80px;
+}
+
+.sessao3 {
+  height: 800px;
+  background: #90EE90;
+  padding: 60px 20px;
+  border-top: 3px solid black;
+  scroll-margin-top: 80px;
+}
+
+.sessao5 {
+  height: 525px;
+  background: #90EE90;
+  padding: 60px 20px;
+  border-top: 3px solid black;
+  scroll-margin-top: 80px;
+}
+
+.sessao2{
+  height: 1950px;
+  background: #ffffff;
+  padding: 60px 20px;
+  border-top: 3px solid black;
+  scroll-margin-top: 80px;
+}
+
+.sessao4{
+  height: 1100px;
+  background: #ffffff;
+  padding: 60px 20px;
+  border-top: 3px solid black;
+  scroll-margin-top: 80px;
+}
+
+.sessao99{
+  height: 650px;
+  background: #ffffff;
+  padding: 60px 20px;
+  border-top: 3px solid black;
+  scroll-margin-top: 80px;
+}
+
+.sessao6{
+  height: 2150px;
+  background: #ffffff;
+  padding: 60px 20px;
+  border-top: 3px solid black;
+  scroll-margin-top: 80px;
+}
+
+section {
+  height: 600px;
+  padding: 20px;
+}
+
+#inicio { 
+  background: linear-gradient(to right,#ffffff 75%, #000 100%);
+  padding-top: 120px;
+
+}
+
+#importancia { background: linear-gradient(to right,#00d600 50%, #000 110%); }
+#campo-cidade { background: linear-gradient(to right,#ffffff 50%, #000 110%); }
+#historia { background: linear-gradient(to right,#ffffff 80%, #000 110%); }
+#interdependencia {background: linear-gradient(to right,#00d600 50%, #000 110%);}
+#beneficios { background: linear-gradient(to right,#ffffff 80%, #000 110%); }
+#futuro {  background: linear-gradient(to right,#00d600 50%, #000 110%); }
+#economia {  background: linear-gradient(to right,#ffffff 80%, #000 110%); }
+#porque {  background: linear-gradient(to right,#00d600 50%, #000 110%);  }
+
+.cabecalho {
+  top: 20px;
+  left: 40px;
+  text-align: left;
+  max-width: 400px;
+  margin-left: 10px;
+}
+
+.cabecalho .titulos {
+  font-size: 45px;
+}
+
+.cabecalho .subtitulos2,
+.cabecalho .subtitulos3 {
+  font-size: 25px;
+  margin-left: 0;
+  margin-bottom: 20px;
+  text-align: center;
+  font-weight: bold;
+}
+
+.subtitulos2 {
+  color: #005f00;
+  white-space: nowrap;
+}
+
+.subtitulos3 {
+  color: #000000;
+  white-space: nowrap;
+}
+
+
+.titulosbrancos {
+  font-family: "Caprasimo", serif;
+  font-size: 2.5rem;
+  font-style: italic;
+  color: rgb(255, 255, 255);
+  margin-bottom: 5px;
+  text-shadow: 
+  -2px -2px 0 #000,  
+  2px -2px 0 #000,
+  -2px  2px 0 #000,
+   2px  2px 0 #000;
+     white-space: nowrap;
+}
+
+.paragrafo{
+margin-left: 10px;
+font-size: x-large;
+}
+
+.fonte{
+  margin-left: 10px;
+  font-size: x-small;
+  }
+
+.paragrafo5{
+  margin-left: 10px;
+  font-size: x-large;
+  white-space: nowrap;
+  }
+
+.paragrafobaixo{
+  margin-left: 10px;
+  font-size: x-large;
+  margin-top: -20px;
+  }
+
+.paragrafotitulo{
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  font-size: smaller;
+  margin-left: 10px;
+  margin-top: 50px;
+  color: rgb(67, 175, 17);
+  font-weight: bold;
+  font-size: 30px;
+}
+
+.semideiapranome{
+  margin-left: 10px;
+  font-size: x-large;
+  font-family: "Caprasimo", serif;
+  font-size: 2rem;
+  font-style: italic;
+  color: rgb(0, 105, 5);
+  margin-bottom: 5px;
+  text-shadow: 
+  -2px -2px 0 #000,  
+  2px -2px 0 #000,
+  -2px  2px 0 #000,
+   2px  2px 0 #000;
+     white-space: nowrap;
+    
+}
+
+.linhaverde {  
+  width: 100%;
+  height: 3px;
+  background-color: #2e7d32;
+  margin: 30px 0;
+  border-radius: 5px;
+}
+
+.paragrafobranco1{
+  margin-left: 10px;
+  font-size: x-large;
+  white-space: nowrap;
+  color: white
+}
+
+.paragrafobranco2{
+  margin-left: 10px;
+ font-size: x-large;
+ white-space: nowrap;
+ color: white
+}
+
+.paragrafobranco{
+margin-left: 10px;
+font-size: x-large;
+color: white
+}
+
+.paragrafobranco3{
+  margin-left: 10px;
+  white-space: nowrap;
+  font-size: x-large;
+  color: white
+  }
+
+.paragrafo-da-economia-muito-top-ne {
+  margin-left: 10px;
+  white-space: nowrap;
+  font-size: x-large;
+  color:#000
+}
+
+.conteudo-central {
+  font-size: 30px;
+}
+
+.palavra-verde{
+  color: #005203;
+  font-weight: bold;
+}
+
+.destaque{
+  color: #005f00;
+  font-style: italic;
+  font-weight: bold;
+}
+
+.texto-img {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.texto {
+  flex: 1;
+}
+
+.imglateral{
+  position: relative;
+}
+
+.imglateral img {
+  position: absolute;
+  top: -130px;
+  right: 0px;
+  left: -650px;
+  width: 500;
+}
+
+.imglateral1{
+  position: relative;
+}
+
+.imglateral1 img {
+  position: absolute;
+  top: -550px;
+  right: 0px;
+  left: 1150px;
+  width: 500;
+}
+
+.imglateral3{
+  position: relative;
+}
+
+.imglateral3 img {
+  position: absolute;
+  top: -950px;
+  right: 0px;
+  left: 900px;
+  width: 1000px;
+}
+
+.imglateral2{
+  position: relative;
+}
+
+.imglateral2 img {
+  position: absolute;
+  top: -2200px;
+  left: 800px;
+  width: 1200px;
+}
+
+.dinheiro{
+  position: relative;
+}
+
+.dinheiro img {
+  position: absolute;
+  top: -1000px;
+  right: -700px;
+  max-width: 100%;
+  overflow: hidden;
+}
+
+
+.imglateralhappy{
+  position: relative;
+}
+
+.imglateralhappy img {
+  position: absolute;
+  top: -150px;
+  right: 0px;
+  width: 300;
+}
+
+.palavra-preta{
+  color:#000000;
+  font-weight: bold;
+}
+
+.rodape {
+  background: linear-gradient(to top, #ffffff 50%, #777777 100%);
+  text-align: center;
+  padding: 40px 20px;
+  border-top: 3px solid black;
+}
